@@ -1,0 +1,31 @@
+<audio id="song" loop>
+    <source src="./audio/ambient.ogg">
+</audio>
+<script>
+    window.addEventListener('keypress', () => {
+        document.getElementById("song").play();
+    });
+</script>
+
+<style>
+body {
+    margin: 0;
+    background-color: black;
+    background-image: url(./Images/background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+    padding: 20px 20px;
+    overflow: hidden;
+}
+</style>
+<p style="
+color: white; 
+font-family: 'Courier New', Courier, monospace;
+font-size: 25px;
+margin-bottom: 6px;"> 
+    <span>Score: </span><b><i><span id="scoreEl">0</span></b></i>
+</p>
+<canvas></canvas>
+<script src="index.js"></script>
